@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0 ;
+    --softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG:  hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --borderRadius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--mainBG);
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25em;
+    background-color: var(--cardBG);
+    margin: 30px auto ;
+    width: 290px;
+    border-radius: var(--borderRadius);
+    padding: 1.5em;
+    box-shadow:    0px 12px 0px 10px hsl(217, 55%, 10%), 0px 15px 0px 25px hsl(216, 56%, 11%) ;
+}
+
+h1 {
+    color: white;
+    font-size: 1.25em;
+}
+h1:hover {
+
+    color: var(--Cyan);
+}
+
+.image {
+    position: relative;
+    width:100%; height: 100%;     
+}
+.image .NFT {
+    border-radius: var(--borderRadius);
+    position: relative;
+    width: 100%;
+}
+
+.NFT:hover {
+    filter: black;
+}
+
+.filter {
+    width: 100%;
+    height: 98.5%;
+    top:0;
+    border-radius: var(--borderRadius);
+    position: absolute;
+    background-color:  hsl(178, 100%, 50%, 0.4);
+    z-index: 1;
+    opacity: 0
+}
+
+.filter:hover, .filter:hover ~ .eyes {
+    opacity: 1
+}
+
+.eyes {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+span img {
+    height: 20px; 
+}
+
+.flex span {
+    align-items: center; 
+
+}
+
+.Etherum {
+    color: var(--Cyan);
+}
+.Etherum, .timeleft, .creatordiv {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+}
+
+p, .timeleft, .creatordiv {
+    color: var(--softblue)
+}
+
+.line {
+    background-color: var(--line);
+    height:0.1rem;
+}
+.avatar {
+    background-color: white;
+    border-radius:50%; 
+    padding:0.05rem;
+}
+.creator {
+    color: white
+}
+.creator:hover {
+
+    color: var(--Cyan);
+}
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px */
+
